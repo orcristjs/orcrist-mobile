@@ -1,6 +1,6 @@
 # orcrist-mobile
 
-> 兽咬剑 JS 家族：React PC 端组件库
+> 兽咬剑 JS 家族：React WebApp 端组件库
 
 OrcristJS Family : React WebApp Components.
 

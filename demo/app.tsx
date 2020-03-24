@@ -10,12 +10,14 @@ import {
   useParams
 } from "react-router-dom";
 import { Header, Footer } from "../components";
+import "./global.css";
+import styles from "./style.less";
 
 function BasicExample() {
   return (
     <Router>
       <div>
-        <h1>Orcrist-Mobile Components: </h1>
+        <h1 style={{ fontSize: "42px" }}>Orcrist-Mobile Components: </h1>
         <ul>
           <li>
             <Link to="/header">Header</Link>

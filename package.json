@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wamuujs/wamuu-ui.git"
+    "url": "git+https://github.com/orcristjs/orcrist-mobile.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "OrcristJS Team",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wamuujs/wamuu-ui/issues"
+    "url": "https://github.com/orcristjs/orcrist-mobile/issues"
   },
-  "homepage": "https://github.com/wamuujs/wamuu-ui#readme",
+  "homepage": "https://github.com/orcristjs/orcrist-mobile#readme",
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
