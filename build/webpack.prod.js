@@ -155,6 +155,10 @@ module.exports = {
     path: path.resolve(basePath, "./lib")
   },
   plugins: [
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+    }),
     new MiniCssExtractPlugin({
       // 类似 webpackOptions.output里面的配置 可以忽略
       filename: "[name].css",
