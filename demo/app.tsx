@@ -7,23 +7,35 @@ import {
   Link,
   useHistory,
   useLocation,
-  useParams
+  useParams,
 } from "react-router-dom";
-import { Header, Footer } from "../components";
-import "./global.css";
-import styles from "./style.less";
+import { Header, Footer, Loading, OstMask } from "../components";
+
+const LoadingC = () => {
+  return <Loading isLoading={true} />;
+};
+
+const OstMaskC = () => {
+  return <OstMask show={true} />;
+};
 
 function BasicExample() {
   return (
     <Router>
       <div>
-        <h1 style={{ fontSize: "42px" }}>Orcrist-Mobile Components: </h1>
+        <h1>Orcrist-UI Components: </h1>
         <ul>
           <li>
             <Link to="/header">Header</Link>
           </li>
           <li>
             <Link to="/Footer">Footer</Link>
+          </li>
+          <li>
+            <Link to="/Loading">Loading</Link>
+          </li>
+          <li>
+            <Link to="/mask">mask</Link>
           </li>
         </ul>
 
@@ -40,6 +52,8 @@ function BasicExample() {
           <Route exact path="/" component={Header}></Route>
           <Route path="/header" component={Header}></Route>
           <Route path="/footer" component={Footer}></Route>
+          <Route path="/Loading" component={LoadingC}></Route>
+          <Route path="/mask" component={OstMaskC}></Route>
         </Switch>
       </div>
     </Router>
