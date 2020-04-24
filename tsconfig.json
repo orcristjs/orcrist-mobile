@@ -14,7 +14,7 @@
 		"strict": true,
 		"esModuleInterop": true,
 		"paths": {
-			"@/*": ["components/*"]
+			"@/*": ["components copy/*"]
 		}
 	},
 	"exclude": ["node_modules"]
